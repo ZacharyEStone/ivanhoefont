@@ -1,0 +1,107 @@
+html{
+	background-color: #fdf7dd;
+}
+body{
+	font-family: Caudex, Georgia, serif; 
+	width: 700px; 
+	margin: 0 auto;
+	color: hsla(0,0%,0%,0.8);
+}
+a:link,
+a:visited,
+a:active {
+	text-decoration: none;
+	color: hsla(0,0%,0%,0.8);
+}
+a:hover,
+a:focus {
+	text-decoration: none;
+	color: red;
+}
+header[role=banner] {
+	border-bottom: 1px solid hsla(0,0%,0%,0.3);
+}
+header[role=banner] h1 {
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 600%;
+	margin-bottom: 0;
+}
+header[role=banner] h1:before,
+header[role=banner] h1:after {
+	display:inline-block;
+	content:"☙";
+	font-family: "Menlo Bold";
+	color: #369;
+	margin: 0 20px;
+}
+header[role=banner] h1:after {
+	-moz-transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	transform: rotateY(180deg);
+}
+
+nav ul{
+	list-style: none;
+	margin: 0;
+	padding-left: 0;
+	text-align: center;
+	font-size: 200%;
+	line-height: 2;
+}
+nav li{
+	display: inline-block;
+	margin: 0 40px;
+}
+
+nav a {
+	display:block;
+}
+nav a:hover:before{
+	color: #900 !important;
+}
+nav li.nav-about a:before{
+	content:"¶";
+	font-family: Gabriola;
+	color: hsla(0,0%,0%,0.3);
+}
+nav li.nav-install a:before{
+	content:"❦";
+	font-family: Meiryo;
+	color: hsla(0,0%,0%,0.3);
+}
+nav li.nav-demo a:before{
+	content:"☝";
+	font-family: "NanumGothic ExtraBold";
+	color: hsla(0,0%,0%,0.3);
+}
+
+.about nav li.nav-about a:before, 
+.install nav li.nav-install a:before,
+.demo nav li.nav-demo a:before{
+	color: #900;
+}
+.home nav ul{
+	line-height: 1.3;
+}
+.home nav a:before{
+	display: block;
+	font-size: 600%;
+}
+p:before{
+	content:"¶";
+	font-family: Gabriola;
+	color: #900;
+	display: block;
+	float: left;
+	margin-left: -.75em;
+	font-size: 200%;
+}
+footer[role=contentinfo] {
+	border-top: 1px solid hsla(0,0%,0%,0.3);
+}
+footer[role=contentinfo] {
+	text-align: center;
+	font-size: 125%;
+	margin: 10px 0;
+}
