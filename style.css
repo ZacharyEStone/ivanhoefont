@@ -129,8 +129,22 @@ nav li.nav-demo a:before{
 	font-family: Meiryo;
 	font-size: 1000%;
 	color: #369;
-	text-align: center;
+	margin-left: 285px;
 }
+.install a.hover{
+	color: #900;
+}
+.ourshit body {
+	font-family: "Comic Sans MS", Georgia, serif; 
+	width: 1000px; 
+	margin: 0 auto;
+	color: #FF33CC;
+}
+.ourshit h1.shitty{
+	text-align: right;
+	color: #FF33CC;
+}
+
 footer[role=contentinfo] {
 	border-top: 1px solid hsla(0,0%,0%,0.3);
 }
